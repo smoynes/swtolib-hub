@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0066)http://www.torontopubliclibrary.ca/search.jsp?Ntt=entrepreneurship -->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"><script>var addthis={init:function(){}, layers:function(){}, toolbox:function(){}, button:function(){}, counter:function(){}};</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
 
@@ -18,7 +18,7 @@ entrepreneurship
 <meta http-equiv="X-UA-Compatible" content="IE=7,9,10">
 
 <meta name="description" content=""> 
-<meta name="keywords" content="">
+<meta name="keywords" content="entrepreneurship">
 <meta name="thumbnail" content="">
 <meta name="identifier" content="http://www.torontopubliclibrary.ca/search.jsp">
 
@@ -528,7 +528,7 @@ pageTracker._trackEvent(category,action,document.title);
 
 
 <div class="grid_13 alpha">
-	<form name="searchForm" id="searchForm-searchBar" method="get" action="/tplsearch.html" onsubmit="fakeSearch('search-terms'); return false;">
+	<form name="searchForm" id="searchForm-searchBar" method="get" action="http://www.torontopubliclibrary.ca/search.jsp" onsubmit="fakeSearch('search-term'); return false;">
 		<div class="search-box" id="search-box">
 			
 	
@@ -540,7 +540,7 @@ pageTracker._trackEvent(category,action,document.title);
 	
 				<div class="search-terms-container float-left">
 					<label for="search-terms" class="header-hide-offscreen">Search</label>
-					<input name="Ntt" style="margin-right: 0px; color: rgb(0, 0, 0);" id="search-terms" type="text" onfocus="" value="">
+					<input name="Ntt" style="margin-right: 0px; color: rgb(0, 0, 0);" id="search-terms" type="text" onfocus="" value="entrepreneurship">
 					<input class="button search" id="submit-button" onclick="fakeSearch('search-terms'); return false;" value="Search" type="submit">
 				</div>
 				
@@ -10363,7 +10363,7 @@ pageTracker._trackEvent(category,action,document.title);
                               jQuery.ajax({
                                 url: keyword + '.json',
                               }).done(function (data) {
-                                var html = "<h1>LibHub Community Results</h1>";
+                                var html = "";
                                 for (var i = 0; i < data.results.length; i++) {
                                   var el = data.results[i];
                                   var entry = "<a href=\"#\">" + el.name + "</a>" +
@@ -10373,8 +10373,12 @@ pageTracker._trackEvent(category,action,document.title);
                                 }
                                 jQuery("#libhubresults").append(html);
                               }).fail(function (data, err) {
+                                alert('fail' + err);
                               });
                             </script>
+                            <h1>
+                              LibHub Community Results
+                            </h1>
                             <div id="libhubresults">
                             </div>
                           </div>
