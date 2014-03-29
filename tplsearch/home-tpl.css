@@ -1,0 +1,316 @@
+/*  Home Page Styles Only 
+
+Quick Search for style Sections.  Copy and paste these into search for easy searching
+
+1.0 - Find your Way styles
+2.0 - Home page What's New styles
+3.0 - New Titles styles
+
+----------- */
+#search-alternative-links #old-cat, #search-alternative-links span, #reserve-computer, #header-language-links, .header-search label.hint  {
+	display: block;
+}
+
+.header-top .logo a:hover {
+	background-image: none;
+}
+
+/****1.0 - Find your Way styles ****/
+#home-page-banner {
+	display: block;
+	width: 960px;
+	margin: auto 0;
+}
+
+#linkList {
+	display: block;
+	float: left;
+	list-style-type: none;
+	list-style-position: outside;
+	padding-left: 0;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+
+#mainlinksContainer {
+	position: relative;
+	width: 960px;
+	/*height:99px;*/
+	padding: 0;
+	margin: 0 0 44px 0; /**  Changed for new menu **/
+	clear: left;
+	overflow: hidden;
+	/*margin-top: 80px;  margin for IE 6/7 */
+	/*** margin-bottom: 20px; no longer needed because of new menu ***/
+}
+
+#find-your-way {
+	float: left;
+	background: url(/content/images/find-your-way-logo.jpg) no-repeat;
+	height: 50px;
+	width: 350px;
+	margin-top: 45px;
+	margin-right: 14px;
+}
+
+#sublinksContainer {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	display: block;
+	overflow: hidden;
+	/*position: absolute;*/ /*margin-bottom:20px;*/
+	padding-top: 0px;
+	padding-left: 0px;
+	/*top:0;x
+	left:380px;*/
+}
+
+#sublinksContainer a {
+	float: left;
+	width: 175px;
+	padding: 5px 4px 7px; /*padding-right:20 */
+	margin-top: 0;
+	margin-right: 0;
+	/*font-family: Helvetica, Arial , sans-serif;
+   font-size:13px;*/
+	font-weight: bold;
+	text-decoration: none;
+	background: url(/content/images/arrow.gif) no-repeat center left;
+}
+
+#sublinksContainer a.extended-width {width:198px}
+
+#sublinksContainer a:hover {
+	background-color: #b3f2f2;
+	background-image: url(/content/images/arrow-hover.gif) no-repeat center left;
+}
+
+#sublinksContainer.horizontal-list li {
+	border: none;
+	padding: 0 0 0 2px;
+}
+
+.clearLeft {
+	margin: 0;
+	padding: 0;
+	clear: left;
+	/*display:inline-block;*/
+	overflow: hidden;
+}
+
+.fyw-link {
+	color: #263a5d;
+	font-size: 1.1em; /*10pt*/
+	font-weight: bold;
+	display:block;
+	padding-left:0.8em;
+}
+
+.fyw-kidsspace img {
+	position: relative;
+	top: 2px;
+	margin-left: 0.8em;
+}
+
+.fyw-ramp {
+	color: #000;
+	font-weight: bold;
+}
+
+.fyw-ramp img {
+	position: relative;
+	top: 3px;
+	margin-left: 0.8em;
+}
+
+#linkList #banner {
+	width: 960px;
+	height: 120px;
+	position: relative;
+	z-index: -2000;
+}
+
+
+div#latest-from-your-library {
+	background-color: #fff;
+}
+
+/* Home page search styles */
+
+.front-page .header-links li {
+	border-right:1px solid #3A3A3A;
+}
+
+.front-page #promotions {
+	height: 100px;
+	width: 653px;
+}
+
+.front-page #header-links-container {
+	margin-top:-107px;
+}
+
+.front-page .header-top #user-session{
+	float:none;	
+	display:inline-block;
+}
+
+.front-page #header-search #search-alternative-links a{
+	display:inline;
+	float:none;
+}
+
+/** New Menus stuff **/
+	
+.masthead-container {border-bottom: 1px solid #AAA}
+	
+#menu-search {display: none}
+
+#donate-item {
+	display:block;
+	border-right: 0;
+	padding: 18px 16px 0px 16px;
+	padding: 0 16px 16px 0; /*Newly added so that borders can be switched to left instead of right, eliminates right borders (2 styles) */}
+	
+#donate-item a {
+   	background-color: #f25824;
+   	color: white;
+   	display:block;
+   	font-size:14px;
+   	font-weight: bold;
+   	padding: 15px 16px;
+   	margin: 14px 0 0 18px;}
+	
+#language-item {display:inline}
+
+#header-search {display:block}
+	
+.widget {margin-bottom:32px}
+
+.grid_6 {margin-right:8px}  /*left column */
+.grid_5 {margin-left:8px; margin-right:8px}  /*middle column */
+.grid_5.omega {margin-left:8px; margin-right:0}  /*right column */
+
+	
+/** New Menu stuff ends **/
+
+.header-search #searchTerms {
+	border: 1px solid #AAA;
+	background-color: #f2f2f2;
+	font-size: 21px;
+    height: 44px;
+    width: 24em; /* 500px*/
+    padding-left: 0.35em;
+    
+    *height: 40px;
+    *line-height: 40px;
+}
+
+.header .search-alternant{
+	display: block;
+	float: left; 
+	font-size: 1.2em;
+	margin: 15px 0 0 10px;
+}
+
+.header .search-alternant *{
+	display:inline-block
+}
+
+
+.header-links {
+	display: inline-block;
+	margin-bottom: 5px;
+	font-family: Arial, sans-serif;
+	font-size: 1.25em; /*10pt*/
+	font-weight: normal;
+	color: #CCCCCC;
+	*width:31em;
+}
+
+.widget#Support-Your-Library h3 {
+      border-top: 4px solid #f25824;
+      border-bottom: 1px solid #f25824;
+}
+
+
+/* 2.0 - What's New styles = Home page only */
+
+#whats-new-1, #whats-new-2, #whats-new-3, #whats-new-4, #whats-new-5,#whats-new-6 {
+	margin-bottom: 0;
+}
+
+/* 3.0 - New Titles styles = Home page only */
+.grid_5 #new-titles:first-child ~ #new-titles .image-container{
+	width: 80px;
+}
+
+.author {
+	font-size: .9em;
+	padding: 2px 0 0 0;
+	}
+
+.more_link {
+	margin:  -10px 0 1.5em 0;
+	padding: 0 0 0 0.8em;
+}
+
+/* List styles */
+.merch-record-horizontal ul {
+	margin: -4px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+.merch-record-horizontal li {
+	margin: 0px;
+	}
+
+/* added to fix problem on homepage in safari on mac */
+.merch-record-horizontal li:first-child {
+	margin-top: 2px;
+}
+
+.merch-record-horizontal .details {
+	overflow: hidden;
+	padding-left: 90px;
+	min-height: 113px; /* fixes height issue for image and spacing */
+	max-height: 114px; /* Hack to make sure text does not extend past guidelines */
+	position: relative;
+}
+
+.merch-record-horizontal .details img {
+	left: 0;
+	position: absolute;
+	top: 10px;
+	max-width: 80px !important;
+	overflow: hidden;
+}
+
+#homepage #upcoming-programming .merch-record-horizontal .title {
+	padding-top:0;
+}
+
+#recommended-websites h4 {
+	border-top-color:#FFCC33;
+	border-bottom-color:#FFCC33;	
+}
+
+#recommended-websites h5{
+	padding:0; 
+	margin: 4px 0 15px 0; 
+	margin-left:7px
+}
+
+#recommended-websites div + img {
+	width: 20%; 
+	margin-top: 2px; 
+	margin-right:7px
+}
+
+#recommended-websites img + p {
+	color: #767676; 
+	line-height: 1.1em; 
+	text-align: right; 
+	padding-right: 3px; 
+	margin-top: 6px;	
+}
