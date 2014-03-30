@@ -547,7 +547,7 @@ pageTracker._trackEvent(category,action,document.title);
 
 <img
 		class="detail-image" alt="" src="" />
-
+<br/><br/>
 <h1 class="align-bottom">
 
 	<span class="notranslate orgname">
@@ -680,7 +680,13 @@ pageTracker._trackEvent(category,action,document.title);
 <table cellpadding="0" cellspacing="0" border="0">
 	<caption  style="display:none">Full Bibliographic Record</caption>
 	<tbody id="full-record-partial">
+			<tr class="public-information">
+				<th scope='row'>Keywords:</th>
+				<td><a href="#" class="orgkeywords">ORG_KEYWORDS</a></td>
+			</tr>
 		
+
+
 			<tr class="public-information">
 				<th scope='row'>Address:</th>
 				<td class="orgaddress">ORG_ADDRESS</td>
@@ -976,9 +982,10 @@ pageTracker._trackEvent(category,action,document.title);
                  jQuery('.orgphone').html(el.phone_number);
                  jQuery('.orgemail').html(el.email);
                  jQuery.each(el.subject_headings, function (key, value) {
-                   jQuery('.orgsubject').append("<li>" + value + "</li>");
+                   jQuery('.orgsubject').append("<li><a href=\"#\">" + value + "</a></li>");
                  });
                  jQuery('.detail-image').attr('src', el.logo);
+                 jQuery('.orgkeywords').html(el.keywords);
               }
             }
           }).fail(function(data, msg) {
