@@ -59,7 +59,8 @@ Organization
 <meta name="p:domain_verify" content="7d9e14c156f8c4d39d2990ce64d144c7"/>
  
 <link rel="stylesheet" href="/tplsearch/tpl.css" type="text/css"/>
-	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 				
 		
 		
@@ -578,13 +579,6 @@ pageTracker._trackEvent(category,action,document.title);
 
 
 
-<div id="related-subjects">
-<span class="label">Subject headings:</span>	 
-<ul class="orgsubject">
-</ul>
-
-</div>
-
  
 	
 	
@@ -680,21 +674,11 @@ pageTracker._trackEvent(category,action,document.title);
 <table cellpadding="0" cellspacing="0" border="0">
 	<caption  style="display:none">Full Bibliographic Record</caption>
 	<tbody id="full-record-partial">
-			<tr class="public-information">
-				<th scope='row'>Keywords:</th>
-				<td><a href="#" class="orgkeywords">ORG_KEYWORDS</a></td>
-			</tr>
-		
-
-
-			<tr class="public-information">
-				<th scope='row'>Address:</th>
-				<td class="orgaddress">ORG_ADDRESS</td>
-			</tr>
-		
 
 		
 
+		
+			
 		
 
 		
@@ -714,6 +698,14 @@ pageTracker._trackEvent(category,action,document.title);
 					<th scope='row'>Email:</th>
 					<td class='orgemail'></td>
 				</tr>
+				<tr class="isbn">
+					<th scope='row'>Find more like this:</th>
+					<td><ul class="orgsubject">
+</ul>
+</td>
+				</tr>
+			
+
 		
 	</tbody>
 
@@ -982,10 +974,11 @@ pageTracker._trackEvent(category,action,document.title);
                  jQuery('.orgphone').html(el.phone_number);
                  jQuery('.orgemail').html(el.email);
                  jQuery.each(el.subject_headings, function (key, value) {
-                   jQuery('.orgsubject').append("<li><a href=\"#\">" + value + "</a></li>");
+                   jQuery('.orgsubject').append("<li><a href=\"#\"><i class=\"fa fa-folder-open\"></i> " + value + "</a></li>");
                  });
                  jQuery('.detail-image').attr('src', el.logo);
                  jQuery('.orgkeywords').html(el.keywords);
+                 jQuery('.orgtags').html(el.tags);
               }
             }
           }).fail(function(data, msg) {
