@@ -208,10 +208,10 @@ jQuery(document).ready(function() {
 <div class="header-search-container">
 <div class="header-search homepage-only" id="header-search" role="search">
 		
-					<form name="searchForm" id="searchForm" method="get" action="entrepreneurship.html">
+					<form name="searchForm" id="searchForm" method="get" action="" onsubmit="fakeSearch('searchTerms'); return false;">
 					<!-- <input name="Ntk" id="searchKey" value="Keywords_Anywhere" type="hidden"/> -->
 						<input name="Ntt" id="searchTerms" class="searchTerms float-left" type="text" onfocus="" value="" placeholder="Search books, movies, branches, programs &amp; more">
-						<input id="submit-button" class="button search float-left" value="Search" type="submit">													
+						<input id="submit-button" class="button search float-left" value="Search" type="submit" onclick="fakeSEarch('searchForm'); return false;">
 						<div class="search-alternant">
 							<a href="http://www.torontopubliclibrary.ca/advanced/">Advanced</a>
 							<span>|</span>
@@ -3873,31 +3873,10 @@ jQuery(document).ready(function() {
 	
 		
 
-			<script type="text/javascript">
-				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-			</script><script src="./Home   Toronto Public Library_files/ga.js" type="text/javascript"></script>
-			<script type="text/javascript">
-				var pageTrackerId = "UA-2885100-29";
-				try {
-					var subdirectoryGATrackerKey = TPLGA.getSubdirectoryGATrackerKey(pageTrackerId);
-					if(typeof(subdirectoryGATrackerKey)!="undefined"){ 
-						pageTrackerId = subdirectoryGATrackerKey;												
-					}						
-				} catch(err) {
-					if(err=="UndefinedSubdirectoryTrackerKeyError") {
-						pageTrackerId = "UA-2885100-29";											
-						}
-					};				
-				try {
-				var pageTracker = _gat._createTracker(pageTrackerId);
-				pageTracker._setDomainName('.torontopubliclibrary.ca');
-				pageTracker._setAllowLinker(true);
-				pageTracker._setAllowHash(false);
-				pageTracker._trackPageview();								
-				} catch(err) {}
-			</script> 	
-
- 	
-
+			<script>
+                          var fakeSearch = function (searchId) {
+                            var searchTerm = jQuery('#' + searchId).attr('value');
+                            window.location = searchTerm + '.html';
+                          };
+</script>
 </body></html>
