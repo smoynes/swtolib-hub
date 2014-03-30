@@ -2,11 +2,10 @@
     "results": [
         {
             "name": "Startup Weekend",
-            "description": "The Best",
+            "short_description": "Startup Weekend is a global network of passionate leaders and entrepreneurs on a mission to inspire, educate, and empower individuals, teams and communities.",
             "link": "startupweekend.html",
 
             "logo": "logo",
-            "description": "decription",
             "website": "http://example.org",
             "phone_number": "phone number",
             "email": "email@example.org",
@@ -20,14 +19,14 @@
         
         {
             "name": "Seneca College Centre for Entrepreneurship",
-            "description": "Services for new and existing businesses",
+            "short_description": "Services for new and existing businesses",
             "link": "startupweekend.html"
         },
         
         {
             "key": "venturelab",
             "name": "ventureLAB",
-            "description": "Where talented entrepreneurs get help bringing their technology to market. Services for new and existing businesses",
+            "short_description": "Where talented entrepreneurs get help bringing their technology to market. Services for new and existing businesses",
             "link": "venturelab.html",
 
             "address": "7271 Warden Avenue<br/>Markham, Ontario, Canada<br/>L3R 5X5",
@@ -45,7 +44,7 @@
 
         {
             "name": "Canada Business Ontario",
-            "description": "Provides access to accurate, timely and relevant information on federal and provincial business-related programs, services and regulations.",
+            "short_description": "Provides access to accurate, timely and relevant information on federal and provincial business-related programs, services and regulations.",
             "link": "startupweekend.html"
         }
      ]
