@@ -501,6 +501,12 @@ pageTracker._trackEvent(category,action,document.title);
 .show-it {
 	
 }
+
+ul
+{
+    list-style-type: none;
+    padding:0; margin:0;
+}
 </style>
 
 
@@ -697,13 +703,16 @@ pageTracker._trackEvent(category,action,document.title);
 					<th scope='row'>Email:</th>
 					<td class='orgemail'></td>
 				</tr>
+                                <tr><td></td></tr>
 				<tr class="isbn">
 					<th scope='row'>Find more like this:</th>
-					<td><ul class="orgsubject">
-</ul>
-</td>
+					<td></td>
 				</tr>
-		
+                                <tr class="isbn">
+                                  <td><ul class="orgsubject"></ul></td>
+                                  <td></td>
+                                </tr>
+		                
 	</tbody>
 
 		
@@ -969,9 +978,9 @@ pageTracker._trackEvent(category,action,document.title);
                  jQuery('.orgaddress').html(el.address);
                  jQuery('.orgwebsite').html(el.website);
                  jQuery('.orgphone').html(el.phone_number);
-                 jQuery('.orgemail').html(el.email);
+                 jQuery('.orgemail').html('<i class="fa fa-envelope"></i> ' + el.email);
                  jQuery.each(el.subject_headings, function (key, value) {
-                   jQuery('.orgsubject').append("<li><a href=\"#\"><i class=\"fa fa-folder-open\"></i> " + value + "</a></li>");
+                   jQuery('.orgsubject').append("<li><a href=\"#\"><i class=\"fa fa-tag\"></i> " + value + "</a></li>");
                  });
                  jQuery('.orgkeywords').html(el.keywords);
                  jQuery('.detail-image').attr('src', el.logo);
