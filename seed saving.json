@@ -1,0 +1,47 @@
+{
+    "results": [
+        {
+            "key": "cornell",
+            "name": "Cornell Community Garden",
+            "short_description": "The Cornell Community Garden provides space for community members to grow their own fruits and vegetables, using heritage, organic seeds.",
+            "link": "cornell.html",
+
+            "address": "3201 Bur Oak Avenue<br/>Markham, Ontario, Canada<br/>L6B 1E3",
+            "logo": "CommunityGarden.jpg",
+            "website": "www.cornellgarden.com",
+            "phone_number": "",
+            "email": "grow@cornellgarden.com",
+            "category": "Environment",
+            "subject_headings": ["Community Supported Agriculture", "Community Gardens"],
+            "keywords": "Gardening, Seed Saving, Sustainability, Community Gardens",
+            "tags": "eat local, green spaces, gardens, community gardens"
+
+        },
+        
+        {
+            "name": "St Paul's Lutheran Church Community Garden",
+            "short_description": "",
+            "link": "startupweekend.html"
+        },
+        
+        {
+            "key": "Rent-A-Garden Plot",
+            "name": "Rent-A-Garden Plot",
+            "short_description": "Richmond Hill Community Garden",
+            "link": "venturelab.html",
+
+            "address": "7271 Warden Avenue<br/>Markham, Ontario, Canada<br/>L3R 5X5",
+            "logo": "venturelab.png",
+            "description": "ventureLAB is where talented entrepreneurs get help bringing their technology to market. We are the York Region partner in Ontario Network of Entrepreneurs [ONE], a collaborative network of organizations across Ontario, designed to help you commercialize your ideas.",
+            "website": "http://venturelab.ca/",
+            "phone_number": "905-248-2727",
+            "email": "info@venturelab.ca",
+            "category": "Technology",
+            "subject_headings": ["High Technology Industries", "Entrepreneurship"],
+            "keywords": ["Technology, Entrepreneurship, Business, Innovation"],
+            "tags": "Tech, business hub, innovation, youth jobs, grants"
+
+        }
+
+     ]
+}
