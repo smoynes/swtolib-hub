@@ -3,7 +3,19 @@
         {
             "name": "Startup Weekend",
             "description": "The Best",
-            "link": "startupweekend.html"
+            "link": "startupweekend.html",
+
+            "logo": "logo",
+            "description": "decription",
+            "website": "http://example.org",
+            "phone_number": "phone number",
+            "email": "email@example.org",
+            "category": "category",
+            "subject_heading": "subject headings",
+            "keywords": "keywords",
+            "tags": "tags"
+            
+            
         },
         
         {
