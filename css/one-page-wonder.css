@@ -2,9 +2,13 @@ body {
 	margin-top: 50px; /* 50px is the height of the navbar - change this if the navbarn height changes */
 }
 
+a:hover {
+	color: #39B54A !important;
+}
+
 .header-image {
     /* Use a tiling background image or a full width image - if you're using full width you will need to change no-repeat center center cover  */
-	background: url(http://placehold.it/200x300) repeat;
+	background: #fff;
 	background-position: top;
 	height: auto;
 	display: block;
@@ -47,8 +51,18 @@ body {
 }
 
 .btn-primary {
-
+	color: #fff;
+	background-color: #39B54A;
+	border-color: #39B54A;
 }
+
+.btn-primary:hover {
+	color: #000 !important;
+	background-color: #39B54A;
+	border-color: #39B54A;
+}
+
+
 
 footer {
 	margin: 50px 0;
