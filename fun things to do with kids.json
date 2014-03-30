@@ -1,0 +1,47 @@
+{
+    "results": [
+        {
+            "key": "360kids",
+            "name": "360 Kids",
+            "short_description": "Provide a variety of programs to service children, youth and families.",
+            "link": "360kids.html",
+            "description": "A non-profit, multi-service, charitable organization and a member of the United Way of York Region. Provide a variety of programs to service children, youth and families. Services include FAMILY RESOURCE CENTRES: For parents, grandparents, nannies and caregivers with preschool children from birth to five years of age. Provide activities, workshops, support groups, organized outings and information and referral to other community services. Seven days per weeks at various times and locations. Fees for some programs. For program information call 905-471-1620. Some volunteer opportunities available. Vulnerable Sector Screening is required.",
+            "address": "40 Washington Street<br/>Markham, Ontario, Canada<br/>L3P 2R5",
+            "logo": null,
+            "website": "http://www.360kids.ca/",
+            "phone_number": "905-475-6694",
+            "email": "",
+            "category": "Child/Family Services",
+            "subject_headings": ["Early Childhood Education — Activity Programs", "Child Development"],
+            "keywords": "Families, Kids, Activities, Family Activities, Family Resources, Family",
+            "tags": "rainy day, fun for kids, march break, family activities"
+
+        },
+        
+        {
+            "name": "Blue Hills Child and Family Centre",
+            "short_description": "",
+            "link": "startupweekend.html"
+        },
+        
+        {
+            "key": "Children's Aid Society",
+            "name": "Ontario Early Years Centre",
+            "short_description": "York Region",
+            "link": "venturelab.html",
+
+            "address": "7271 Warden Avenue<br/>Markham, Ontario, Canada<br/>L3R 5X5",
+            "logo": "venturelab.png",
+            "description": "ventureLAB is where talented entrepreneurs get help bringing their technology to market. We are the York Region partner in Ontario Network of Entrepreneurs [ONE], a collaborative network of organizations across Ontario, designed to help you commercialize your ideas.",
+            "website": "http://venturelab.ca/",
+            "phone_number": "905-248-2727",
+            "email": "info@venturelab.ca",
+            "category": "Technology",
+            "subject_headings": ["High Technology Industries", "Entrepreneurship"],
+            "keywords": ["Technology, Entrepreneurship, Business, Innovation"],
+            "tags": "Tech, business hub, innovation, youth jobs, grants"
+
+        }
+
+     ]
+}
