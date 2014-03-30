@@ -2,22 +2,26 @@
     "results": [
         {
             "name": "Startup Weekend",
-            "description": "The Best"
+            "description": "The Best",
+            "link": "startupweekend.html"
         },
         
         {
             "name": "Seneca College Centre for Entrepreneurship",
-            "description": "Services for new and existing businesses"
+            "description": "Services for new and existing businesses",
+            "link": "startupweekend.html"
         },
         
         {
             "name": "ventureLAB",
-            "description": "Where talented entrepreneurs get help bringing their technology to market. Services for new and existing businesses"
+            "description": "Where talented entrepreneurs get help bringing their technology to market. Services for new and existing businesses",
+            "link": "venturelab.html"
         },
 
         {
             "name": "Canada Business Ontario",
-            "description": "Provides access to accurate, timely and relevant information on federal and provincial business-related programs, services and regulations."
+            "description": "Provides access to accurate, timely and relevant information on federal and provincial business-related programs, services and regulations.",
+            "link": "startupweekend.html"
         }
      ]
 }
