@@ -20,7 +20,8 @@ Organization
 <meta name="keywords" content=", , , , , , , , Entrepreneurship--Textbooks., New business enterprises--Textbooks., , , , 0176103341, 9780176103347, , " />
 <meta name="thumbnail" content="" />
 <meta name="identifier" content="http://www.torontopubliclibrary.ca/bib-detail.jsp" />
-
+<meta name="json" content="entrepreneurship.json" />
+<meta name="key" content="venturelab" />
 
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -524,7 +525,7 @@ pageTracker._trackEvent(category,action,document.title);
 	<div class="grid_4 alpha">
 
 	<div class="main-image-container"> <img
-		class="detail-image" alt="" src="http://syndetics.com/index.aspx?isbn=0176103341/MC.gif" />
+		class="" alt="" src="" />
 </div>
 	</div>
 
@@ -544,9 +545,12 @@ pageTracker._trackEvent(category,action,document.title);
 
 <!-- Title and Edition -->
 
+<img
+		class="detail-image" alt="" src="" />
 
 <h1 class="align-bottom">
-	<span class="notranslate">
+
+	<span class="notranslate orgname">
 	  ORGNAME
 	</span>
 </h1>
@@ -575,15 +579,8 @@ pageTracker._trackEvent(category,action,document.title);
 
 
 <div id="related-subjects">
-<span class="label">Subjects:</span>	 
-<ul>
-					
-		<li><a class="subject" href="search.jsp?Ntt=Entrepreneurship--Textbooks.&Ntk=Subject_Search_Interface">Entrepreneurship--Textbooks.</a></li>				
-					
-		<li><a class="subject" href="search.jsp?Ntt=New+business+enterprises--Textbooks.&Ntk=Subject_Search_Interface">New business enterprises--Textbooks.</a></li>				
-	
-	
-
+<span class="label">Subject headings:</span>	 
+<ul class="orgsubject">
 </ul>
 
 </div>
@@ -686,7 +683,7 @@ pageTracker._trackEvent(category,action,document.title);
 		
 			<tr class="public-information">
 				<th scope='row'>Address:</th>
-				<td>ORG_ADDRESS</td>
+				<td class="orgaddress">ORG_ADDRESS</td>
 			</tr>
 		
 
@@ -698,18 +695,18 @@ pageTracker._trackEvent(category,action,document.title);
 			
 				<tr class="isbn">
 					<th scope='row'>Website:</th>
-					<td>ORG_WEBSITE</td>
+					<td><a class="orgwebsite" href="#">ORG_WEBSITE</a></td>
 				</tr>
 			
 				<tr class="isbn">
 					<th scope='row'>Phone number:</th>
-					<td></td>
+					<td class='orgphone'></td>
 				</tr>
 			
 		
 				<tr class="isbn">
 					<th scope='row'>Email:</th>
-					<td></td>
+					<td class='orgemail'></td>
 				</tr>
 		
 	</tbody>
@@ -963,33 +960,34 @@ pageTracker._trackEvent(category,action,document.title);
     
 		
 
-	
+	<script>
+          var json = jQuery("meta[name='json']").attr("content");
+          var key = jQuery("meta[name='key']").attr("content");
+          jQuery.ajax({
+            url: json
+          }).done(function(data) {
+            var results = data.results;
+            for (var i = 0; i < results.length; i++) {
+              var el = results[i];
+              if (el.key === key) {
+                 jQuery('.orgname').html(el.name);
+                 jQuery('.orgaddress').html(el.address);
+                 jQuery('.orgwebsite').html(el.website);
+                 jQuery('.orgphone').html(el.phone_number);
+                 jQuery('.orgemail').html(el.email);
+                 jQuery.each(el.subject_headings, function (key, value) {
+                   jQuery('.orgsubject').append("<li>" + value + "</li>");
+                 });
+                 jQuery('.detail-image').attr('src', el.logo);
+              }
+            }
+          }).fail(function(data, msg) {
+            alert(msg);
+          });
+          
+        </script>
 		
 
-			<script type="text/javascript">
-				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-			</script>
-			<script type="text/javascript">
-				var pageTrackerId = "UA-2885100-29";
-				try {
-					var subdirectoryGATrackerKey = TPLGA.getSubdirectoryGATrackerKey(pageTrackerId);
-					if(typeof(subdirectoryGATrackerKey)!="undefined"){ 
-						pageTrackerId = subdirectoryGATrackerKey;												
-					}						
-				} catch(err) {
-					if(err=="UndefinedSubdirectoryTrackerKeyError") {
-						pageTrackerId = "UA-2885100-29";											
-						}
-					};				
-				try {
-				var pageTracker = _gat._createTracker(pageTrackerId);
-				pageTracker._setDomainName('.torontopubliclibrary.ca');
-				pageTracker._setAllowLinker(true);
-				pageTracker._setAllowHash(false);
-				pageTracker._trackPageview();								
-				} catch(err) {}
-			</script> 	
 
  	</body>
 

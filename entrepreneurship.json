@@ -25,9 +25,22 @@
         },
         
         {
+            "key": "venturelab",
             "name": "ventureLAB",
             "description": "Where talented entrepreneurs get help bringing their technology to market. Services for new and existing businesses",
-            "link": "venturelab.html"
+            "link": "venturelab.html",
+
+            "address": "7271 Warden Avenue<br/>Markham, Ontario, Canada<br/>L3R 5X5",
+            "logo": "venturelab.png",
+            "description": "ventureLAB is where talented entrepreneurs get help bringing their technology to market. We are the York Region partner in Ontario Network of Entrepreneurs [ONE], a collaborative network of organizations across Ontario, designed to help you commercialize your ideas.",
+            "website": "http://venturelab.ca/",
+            "phone_number": "905-248-2727",
+            "email": "info@venturelab.ca",
+            "category": "Technology",
+            "subject_headings": ["High Technology Industries", "Entrepreneurship"],
+            "keywords": "Technology, Entrepreneurship, Business, Innovation",
+            "tags": "Tech, business hub, innovation, youth jobs, grants"
+
         },
 
         {
